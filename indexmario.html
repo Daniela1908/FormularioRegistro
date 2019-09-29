@@ -4,9 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Inicio</title>
+    <title>Registro de usuarios</title>
+
+    <script src="indexmario.js"></script>
+
 </head>
 <body>
-    <h1>Inicio</h1>
+    <h1>Registrar usuario</h1>
+
+    <p>
+        <input type="radio" name="tipopersona" value="natural" onclick="ControlVisibilidadCamposSegunTipoPersona(true)"> Persona Natural <br>
+        <input type="radio" name="tipopersona" value="juridica" onclick="ControlVisibilidadCamposSegunTipoPersona(false)"> Persona Jurídica <br>
+    </p>
+
+    <p>
+        <label for="pnnombres" name="lblpnnombres" id="lblpnnombres">Nombres</label>
+        <input type="text" name="pnnombres" id="pnnombres"> <br>
+
+        <label for="pnapellidos" name="lblpnapellidos" id="lblpnapellidos">Apellidos</label>
+        <input type="text" name="pnapellidos" id="pnapellidos"> <br>
+
+        <label for="pjrazonsocial" name="lblpjrazonsocial" id="lblpjrazonsocial">Razón social</label>
+        <input type="text" name="pjrazonsocial" id="pjrazonsocial"> <br>
+
+        <label for="pjpersonacontacto" name="lblpjpersonacontacto" id="lblpjpersonacontacto">Persona de contacto</label>
+        <input type="text" name="pjpersonacontacto" id="pjpersonacontacto"> <br>
+
+        <label for="ptelefono" name="lblptelefono" id="lblptelefono">Teléfono</label>
+        <input type="text" name="ptelefono" id="ptelefono"> <br>
+
+        <label for="pndocumento" name="lblpndocumento" id="lblpndocumento">Documento</label>
+        <input type="text" name="pndocumento" id="pndocumento"> <br>
+
+        <label for="pjnit" name="lblpjnit" id="lblpjnit">NIT</label>
+        <input type="text" name="pjnit" id="pjnit"> <br>
+
+    </p>
+
+    <button type="submit">Crear</button>    
+
 </body>
 </html>
