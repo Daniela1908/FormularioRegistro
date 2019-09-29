@@ -4,9 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Registro</title>
+    <title>Formulario de Registro</title>
+
+    <script src="Index.js"></script>
 </head>
 <body>
-    
+    <h2>Tipo de cuenta</h2>
+
+    <div>
+        <input type="radio" name="tipoPersona" value="Personal" onclick="ControlVisibilidadCamposSegunTipoPersona(true)">Personal
+        <input type="radio" name="tipoPersona" value="Empresarial" onclick="ControlVisibilidadCamposSegunTipoPersona(false)">Empresarial
+    </div>
+    <br>  
+    <div>
+        <label name="lblnombre" id="lblnombre">Nombre(s)</label>
+        <input type="text" name="nombre" id="txtnombre" required="true">
+        <br>
+        <br>
+        <label name="lblapellido" id="lblapellido">Apellido(s)</label>
+        <input type="text" name="apellido" id="txtapellido" required="true">
+        <br>
+        <br>
+        <label name="lblrazonSocial" id="lblrazonSocial">Razón social</label>
+        <input type="text" name="razonSocial" id="txtrazonSocial" required="true">
+        <br>
+        <br>
+        <label name="lblpersonaContacto" id="lblpersonaContacto">Persona de contacto</label>
+        <input type="text" name="personaContacto" id="txtpersonaContacto" required="true">
+        <br>
+        <br>
+        <label name="lblcelular" id="lblcelular">Celular</label>
+        <input type="int" name="celular" id="txtcelular" required="true">
+        <br>
+        <br>
+        <label name="documento" id="lbldocumento">Documento</label>
+        <input type="int" name="documento" id="txtdocumento" required="true">
+        <br>
+        <br>
+        <label name="nit" id="lblnit">Nit</label>
+        <input type="int" name="nit" id="txtnit" required="true">
+        <br>
+        <br>
+        <label name="actividadEconomica" id="lblactividadEconomica">Actividad Economica</label>
+        <input type="text" name="documento" id="txtactividadEconomica" required="true">
+        <br>
+        <br>
+        <label name="numeroEmpleados" id="lblnumeroEmpleados">Número de empleados</label>
+        <input type="int" name="numeroEmpleados" id="txtnumeroEmpleados" required="true">
+    </div>
+
 </body>
 </html>
